@@ -23,9 +23,9 @@
                     <button id="btn-hi" class="lang-btn active" onclick="switchLanguage('hi')">हिन्दी</button>
                     <button id="btn-en" class="lang-btn" onclick="switchLanguage('en')">English</button>
                 </div>
-                <button class="btn btn-primary btn-small open-modal-btn">
+                <a href="#" class="btn btn-primary btn-small register-link">
                     <span class="lang-content" data-lang-hi="प्रवेश लें" data-lang-en="Register Free">प्रवेश लें</span>
-                </button>
+                </a>
             </div>
         </div>
     </nav>
@@ -44,9 +44,9 @@
             
             <div class="hero-actions">
                 <a href="tel:9523012888" class="btn btn-secondary">📞 9523012888</a>
-                <button class="btn btn-primary open-modal-btn">
+                <a href="#" class="btn btn-primary register-link">
                     <span class="lang-content" data-lang-hi="मुफ़्त रजिस्ट्रेशन करें" data-lang-en="Register for Free Now">मुफ़्त रजिस्ट्रेशन करें</span>
-                </button>
+                </a>
             </div>
         </div>
     </header>
@@ -154,38 +154,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- POPUP REGISTRATION MODAL (The Joining Component) -->
-    <div id="regModal" class="modal-overlay">
-        <div class="modal-box">
-            <button class="close-modal-btn" id="closeBtn">&times;</button>
-            <h3 class="lang-content" data-lang-hi="निःशुल्क प्रवेश पंजीकरण फॉर्म" data-lang-en="Free Camp Registration Form">निःशुल्क प्रवेश पंजीकरण फॉर्म</h3>
-            <p class="modal-subtitle lang-content" data-lang-hi="कृपया विवरण भरें, हमारी टीम आपसे संपर्क करेगी" data-lang-en="Fill your details, our team will reach out shortly">कृपया विवरण भरें, हमारी टीम आपसे संपर्क करेगी</p>
-            
-            <form id="campRegistrationForm" onsubmit="handleFormSubmit(event)">
-                <div class="form-group">
-                    <label class="lang-content" data-lang-hi="विद्यार्थी का नाम" data-lang-en="Student's Full Name">विद्यार्थी का नाम</label>
-                    <input type="text" required placeholder="Name">
-                </div>
-                <div class="form-group">
-                    <label class="lang-content" data-lang-hi="वर्तमान कक्षा" data-lang-en="Current Class">वर्तमान कक्षा</label>
-                    <select required>
-                        <option value="3">Class 3</option>
-                        <option value="4">Class 4</option>
-                        <option value="5">Class 5</option>
-                        <option value="6">Class 6</option>
-                        <option value="7">Class 7</option>
-                        <option value="8">Class 8</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label class="lang-content" data-lang-hi="अभिभावक का मोबाइल नंबर" data-lang-en="Parent's Mobile Number">अभिभावक का मोबाइल नंबर</label>
-                    <input type="tel" required pattern="[0-9]{10}" placeholder="10-digit number">
-                </div>
-                <button type="submit" class="btn btn-primary btn-full lang-content" data-lang-hi="रजिस्ट्रेशन सबमिट करें (FREE)" data-lang-en="Submit Registration (FREE)">रजिस्ट्रेशन सबमिट करें (FREE)</button>
-            </form>
-        </div>
-    </div>
 
     <script src="js/main.js"></script>
 </body>
